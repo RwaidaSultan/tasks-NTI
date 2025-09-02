@@ -1,0 +1,112 @@
+body {
+  background: azure;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  min-height: 200vh;
+}
+.container {
+  display: flex;
+  gap: 30px; 
+  justify-content: center;
+  flex-wrap: nowrap; 
+}
+a {
+  text-decoration: none;
+  color: gray;
+}
+span .card1 {
+  color: #1dd0e8;
+  font-weight: bold;
+}
+.card {
+  background: white;
+  width: 30%;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: 600px; 
+   display: flex;     
+  flex-direction: column;
+}
+.top_card {
+  position: relative;
+}
+.top_card .read-more {
+  position: absolute;
+  bottom: 30px;    
+  left: 40px;      
+  color:lightgray;
+  padding: 6px 15px;
+  border-radius: 4px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.top_card img {
+  width: 100%;
+  height: 220px;
+  display: block;
+}
+.top_card .icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  font-size: 14px;
+  color: gray;
+  padding: 8px 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.top_card .icons a {
+  color: gray;
+}
+.top_card .icons i {
+  margin-right: 5px;
+  color: black;
+}
+.top_card .owner {
+  position: absolute;
+  bottom: -25px;
+  right: 20px;
+  border: 5px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+}
+.top_card .owner img {
+  width: 100%;
+  height: 100%;
+}
+.card-body {
+  padding: 40px 20px 20px;
+  text-align: left;
+      
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+.card-body h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1dd0e8;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+.line {
+  width: 50px;
+  height: 5px;
+  background: black;
+  border: none;
+  margin: 8px 0;
+}
+.card-body p {
+  font-size: 18px;
+  color: rgb(72, 72, 72);
+  line-height: 1.5;
+  margin-top: 13px;
+}
