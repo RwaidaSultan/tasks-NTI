@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/css/flag-icons.min.css">
+  <link rel="stylesheet" href="/css/style2.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="border-bottom py-2 px-5">
+    <div class="container d-flex justify-content-between align-items-center small flex-wrap">
+      <div class="d-flex align-items-center gap-3">
+        <!-- Language  -->
+        <div class="hover-dropdown">
+          <span class="text-dark" style="cursor:pointer;">
+            <span class="fi fi-us me-1"></span> <a class="text-dark text-decoration-none" href="#">English</a>
+            <i class="fa-solid fa-angle-down fa-xs ms-1"></i>
+          </span>
+          <ul class="dropdown-menu list-unstyled m-0">
+            <li><a href="#"><span class="fi fi-es me-1"></span> Español</a></li>
+            <li><a href="#"><span class="fi fi-fr me-1"></span> Français</a></li>
+            <li><a href="#"><span class="fi fi-pt me-1"></span> Português</a></li>
+          </ul>
+        </div>
+
+        <!-- Currency  -->
+        <div class="hover-dropdown">
+          <span class="text-dark d-flex align-items-center pe-3 border-end" style="cursor:pointer;">
+            <a class="text-dark text-decoration-none" href="#">USD </a>
+            <i class="fa-solid fa-angle-down fa-xs ms-1"></i>
+          </span>
+          <ul class="dropdown-menu list-unstyled m-0">
+            <li><a href="#">EUR</a></li>
+            <li><a href="#">PRL</a></li>
+          </ul>
+        </div>
+        
+        <a class="text-decoration-none text-dark header-link" href="#">Track order</a>
+        <a class="text-decoration-none text-dark header-link" href="#">Contact</a>
+        <a class="text-decoration-none text-dark header-link" href="#">FAQs</a>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <div class="d-flex align-items-center gap-3 pe-3 border-end">
+          <a href="#" class="text-dark"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="text-dark"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="text-dark"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="text-dark"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <a href="#" class="text-decoration-none text-dark d-flex align-items-center gap-2">
+          <span class="fw-normal">Contact us 24/7</span>
+          <span class="fw-bold">(+92) 3942 7879</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="py-5 contact-section">
+    <div class="container text-center mb-4" style="max-width:70%;">
+      <h2 class="contact-title">Contact us</h2>
+      <p>34 Main Street, Los Angeles 9021<br>United States</p>
+    </div>
+    <div class="mx-auto" style="max-width: 60%;">
+      <section class="my-5">
+        <div class="row text-center justify-content-center g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="mb-1 contact-icons">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h6>Customer Service</h6>
+            <p><a href="" class="contact-link">(+92) 3942 7879</a></p>
+            <p>Call us from 8am to 8pm</p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="mb-1 contact-icons">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h6>Chat With Us</h6>
+            <p><a href="#" class="contact-link live-chat">Live Chat</a></p>
+            <p>Daily: 8 am to 11 pm</p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="mb-1 contact-icons">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h6>Write to Us</h6>
+            <p><a href="mailto:contact@example.com" class="contact-link">contact@example.com</a></p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="mb-1 contact-icons">
+              <i class="fas fa-user"></i>
+            </div>
+            <h6>Follow Us</h6>
+            <div class="d-flex justify-content-center gap-3 mt-1 follow-us">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Form -->
+      <h3 class="text-center mb-4">Do you have some questions?</h3>
+      <form id="contactForm" novalidate>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <input type="text" id="name" class="form-control" placeholder="Name and Surname *">
+            <div class="error-msg"></div>
+          </div>
+          <div class="col-md-6">
+            <input type="email" id="email" class="form-control" placeholder="Email *">
+            <div class="error-msg"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="text" id="subject" class="form-control" placeholder="Subject *">
+          <div class="error-msg"></div>
+        </div>
+        <div class="mb-3">
+          <textarea id="message" class="form-control" placeholder="Message" rows="5"></textarea>
+          <div class="error-msg"></div>
+        </div>
+        <button type="submit" class="btn btn-dark w-100 contact-btn">GET IN TOUCH </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <div class="contact-map mt-5">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423283.4355502345!2d-118.691915396002!3d34.0207304979765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1698765432100!5m2!1sen!2s" height="450" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <!--  Images -->
+  <section class="py-5">
+    <div class="container text-center mb-4">
+      <h2 class="fw-bold">Stores around the world</h2>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <img src="/image/contact/about-2.jpg" class="img-fluid rounded" alt="Image1">
+        <div class="mt-3">
+          <h5 class="fw-bold mb-1">Los Angeles</h5>
+          <p class="mb-0">34 Main Street, Los Angeles 9021</p>
+          <p class="mb-0">United States</p>
+          <p class="mb-0">+02 1234 567 88</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="/image/contact/about-3.jpg" class="img-fluid rounded" alt="Image2">
+        <div class="mt-3">
+          <h5 class="fw-bold mb-1">New York</h5>
+          <p class="mb-0">34 Main Street, Los Angeles 9021</p>
+          <p class="mb-0">United States</p>
+          <p class="mb-0">+02 1234 567 88</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="/image/contact/about-4.jpg" class="img-fluid rounded" alt="Image3">
+        <div class="mt-3">
+          <h5 class="fw-bold mb-1">California</h5>
+          <p class="mb-0">34 Main Street, Los Angeles 9021</p>
+          <p class="mb-0">United States</p>
+          <p class="mb-0">+02 1234 567 88</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+ <!-- Footer -->
+  <footer class="bg-light pt-5">
+    <div class="container">
+      <div class="row mt-4 mb-5 text-center">
+        <div class="col-12">
+          <h5 class="fw-bold">Join our newsletter</h5>
+          <p class="text-muted">Get recommendations, tips, updates, promotions and more.</p>
+          <form id="newsletterForm" class="d-flex flex-column align-items-center gap-3 mb-5">
+            <div class="input-group w-75 mx-auto" style="max-width:700px;">
+              <input type="email" id="email" class="form-control" placeholder="enter your email address">
+              <button type="submit" class="btn btn-dark">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <div id="errorMsg" class="text-danger small" style="display:none;">
+              Please select at least one list.
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="row ">
+        <div class="d-flex flex-wrap justify-content-between">
+  <div class="p-2">
+    <img src="/image/logo.png" alt="Logo" class="mb-3" style="width:120px;">
+    <p class="text-muted mb-3">
+      <i class="fa-solid fa-location-dot me-2"></i>29 SE 2nd Ave, Miami<br>Florida 33131, USA
+    </p>
+    <p class="text-muted mb-3">
+      <i class="fa-solid fa-envelope me-2"></i>info@example.com
+    </p>
+    <a href="" class="footer-phone" style="font-size:1.3rem; font-weight:600; color:#000; text-decoration:none; display:inline-block; margin-top:10px;">
+      (+92) 3942 7879
+    </a>
+  </div>
+  <div class="p-2">
+    <h6 class="fw-bold mb-3">SHOP MORE</h6>
+    <div class="d-flex flex-column gap-1">
+      <a href="#" class="footer-link">New Arrival</a>
+      <a href="#" class="footer-link">Sale off</a>
+      <a href="#" class="footer-link">Living Room</a>
+      <a href="#" class="footer-link">Bedroom</a>
+      <a href="#" class="footer-link">Dinner Room</a>
+    </div>
+  </div>
+  <div class="p-2">
+    <div class="d-flex flex-column gap-1 mt-4 mt-lg-0">
+      <a href="#" class="footer-link">Bathroom</a>
+      <a href="#" class="footer-link">Kitchen Room</a>
+      <a href="#" class="footer-link">Home Office</a>
+      <a href="#" class="footer-link">Home Decoration</a>
+      <a href="#" class="footer-link">Outdoor</a>
+    </div>
+  </div>
+  <div class="p-2">
+    <h6 class="fw-bold mb-3">SHOPPING</h6>
+    <ul class="list-unstyled">
+      <li><a href="#" class="footer-link">Wishlist</a></li>
+      <li><a href="#" class="footer-link">Shop by Brand</a></li>
+      <li><a href="#" class="footer-link">Offers</a></li>
+      <li><a href="#" class="footer-link">Track order</a></li>
+      <li><a href="#" class="footer-link">Size Guide</a></li>
+    </ul>
+  </div>
+  <div class="p-2">
+    <h6 class="fw-bold mb-3">INFORMATION</h6>
+    <ul class="list-unstyled">
+      <li><a href="#" class="footer-link">Track Order</a></li>
+      <li><a href="#" class="footer-link">Shipping & Returns</a></li>
+      <li><a href="#" class="footer-link">About us</a></li>
+      <li><a href="#" class="footer-link">Help</a></li>
+      <li><a href="#" class="footer-link">Gift Cards</a></li>
+    </ul>
+  </div>
+  <div class="p-2">
+    <h6 class="fw-bold mb-3">ACCOUNT</h6>
+    <ul class="list-unstyled">
+      <li><a href="#" class="footer-link">Cart</a></li>
+      <li><a href="#" class="footer-link">My account</a></li>
+      <li><a href="#" class="footer-link">My orders</a></li>
+      <li><a href="#" class="footer-link">Wishlist</a></li>
+      <li><a href="#" class="footer-link">Affiliate Program</a></li>
+    </ul>
+  </div>
+</div>
+      <div class="container mt-4 pt-4 border-top pb-4">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-md-start text-center text-muted mb-3 mb-md-0">
+            Copyright © Merto. All Rights Reserved
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0 d-flex align-items-center gap-3 justify-content-center">
+            <a href="#" class="footer-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="footer-icon"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="footer-icon"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="footer-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer-icon"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+          <div class="col-md-5 d-flex flex-wrap gap-2 justify-content-end">
+            <a href="#"><img src="/image/payment-icons-2.png" alt="img1" class="img-fluid" style="height:40px;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button id="scroll-to-top-btn">
+    <i class="fas fa-arrow-up" style="color:white; font-size:20px;"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/script2.js"></script>
+</body>
+</html>
